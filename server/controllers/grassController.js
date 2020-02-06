@@ -14,7 +14,7 @@ module.exports = {
                 pokemonArray.push(response.data)
                 axios.get(`https://pokeapi.co/api/v2/pokemon/${rand3}`).then(response => {
                     pokemonArray.push(response.data)
-                    res.status(200).send([pokemonArray])
+                    res.status(200).send(pokemonArray)
                 })
             })
         })
